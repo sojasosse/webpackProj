@@ -13,8 +13,8 @@ module.exports = {
         chunkFilename: '[id].[chunkhash].js'
     },
     resolve: {
-        extensions: ['','.js','.vue']
-    }
+        extensions: ['.js', '.vue']
+    },
     module: {
 
         loaders: [
@@ -25,7 +25,7 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                loader: 'babel-preset-es2015',
+                loader: 'babel-loader',
                 exclude: /node_modules/
             }
         ]
